@@ -37,7 +37,7 @@ Random random = new Random();																																										//Created
 
 	public String name()																																														//Method to return the name of items. 
 	{
-		System.out.println("\nWhat name of item should fill the jar? ");																							//Prompts the administrator to enter the name of items.
+		System.out.println("\nWhat type of item should fill the jar? ");																							//Prompts the administrator to enter the name of items.
 		name = reader.nextLine();																																											//Store the name of items from the keyboard into "name" String.
 		return name;																	      																													//Returns the name of items.
 	}
