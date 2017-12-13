@@ -1,0 +1,44 @@
+Your code should live in the src/main/java/ folder. There is a GuessingGame.java starter file, add additional files in that directory.
+To run your program, change directories to src/main/java, i.e. cd src/main/java and then clear && javac GuessingGame.java && java GuessingGame.java
+When you have completed the stories and double checked the requirements (and optionally ran the tests), choose File >> Download workspace.
+Extract the downloaded workspace into a folder.
+Have a GitHub account and know how to create a new repository and upload files to it. This is how you will submit your assignment.
+If you need a reminder on how to use GitHub and GitHub desktop to create a new repository, check out the workshop 'Share Your Projects wIth GitHub Desktop' in the Project Resources.
+
+To complete this project, implement the User Stories below. If you get stuck, don’t forget that you can ask questions in the community. You aren’t alone!
+Here are your user stories to get to the requested Minimum Viable Product:
+As an administrator of the game, I should be able to specify what type of item will be stored in the jar, as well as the total how many could reasonably fit in jar, so that the game stays in the bounds of reality.
+Create a jar class that accepts an item name and a maximum number of items that can fit in the jar. 
+Your program should have an administrator who is prompted to identify what type of item should fill the jar, and the maximum number of items the jar can hold, and should include the phrase "What type of item".
+The type of item should be repeated in the second prompt. For example, if the administrator specifies “gumballs” as the type of item, the next prompt should ask “What is the maximum amount of gumballs?”
+As a player of the game, for each new game I should be presented with a new jar filled with a random number of items, so that I can play multiple games and still find the game challenging.
+Write a fill method for your Jar class that uses the Random class to fill the jar with a random number of items. That number should be between 1 and the maximum number of items set by the administrator. 
+Hint: Read the code in the project instructions for help!
+As a player of the game, I should be shown the maximum possible number of items in the jar.
+When the player begins the game, your program should display the maximum number of items the jar can hold. The prompt should also repeat the type of item in the jar. 
+For example, if the jar is filled with with a maximum number of 1,500 jelly beans, the prompt should read “How many jellybeans are in the jar? Pick a number between 1 and 1500.”
+As a player of the game, I should be prompted to guess the number of the items until I get the correct answer.
+Use a while loop to prompt the user for a new guess until the correct answer is guessed
+As a winner of the game, I should know how many attempts it took me to get to the right answer, so that I am encouraged to beat my score.
+Your winning message should be in this format: "You got it in X attempt(s)".
+When returning the number of guesses, be careful of off by 1 errors!
+Use System.out for output and a reader on System.in for input
+There are tests that have been written and included in this project. If you would like to run them, from the ~/workspace directory run the command ./gradlew test . 
+The first time will take about a minute as it downloads required libraries. Subsequent test runs will be quicker.
+If you are attempting to get an exceeds expectation grade, change the appropriate line in src/main/resources/treehouse.properties to true and the tests will accommodate for your changes.
+Please ensure you upload all the files provided in the starter workspace to GitHub.
+Before you submit your project for review, make sure you can check off all of the items on the Student Project Submission Checklist. 
+The checklist is designed to help you make sure you’ve met the grading requirements and that your project is complete and ready to be submitted!
+
+To get an "exceeds" rating, you can implement these additional User Stories. We decided that they were outside of the original scope, but the client would love this functionality:
+Create a separate Prompter class which encapsulates all the I/O (input/output) of the game.
+Prevent the player from guessing over the maximum number of items in the jar. For example, if the jar can only have 1,000 items, the player should be prompted with “Your guess must be less than 1000.” 
+Do not include over-the-maximum guesses in the total guess count.
+As a player of the game, I should know if my guess is too high or too low, so that I can improve my answers and be encouraged to improve.
+Prompt the player with “Your guess is too high” or “Your guess is too low” depending on the player’s guess.
+NOTE:
+To get an "Exceeds Expectations" grade for this project, you'll need to complete each of the items in this section. See the rubric in the "How You'll Be Graded" tab above for details on how you'll be graded.
+If you’re shooting for the "Exceeds Expectations" grade, it is recommended that you mention so in your submission notes.
+Passing grades are final. If you try for the "Exceeds Expectations" grade, but miss an item and receive a “Meets Expectations” grade, you won’t get a second chance. 
+Exceptions can be made for items that have been misgraded in review.
+
